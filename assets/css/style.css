@@ -13,7 +13,7 @@
 .main{
     height: 100vh;
     width: 100vw;
-    background:url('/assets/img/Background.jpg') no-repeat;
+    background:url(https://raw.githubusercontent.com/duchung45644/Login-Form/master/assets/img/Background.jpg) no-repeat;
     background-size: cover;
     /* ,linear-gradient(120deg, #3ca7ee, #9b408f); */
     display: flex;
