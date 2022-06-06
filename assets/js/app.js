@@ -52,7 +52,7 @@ function checkLength(input, min, max){
 
 function checkPasswordMatch(input1, input2){
     if(input1.value !== input2.value){
-        showError(input2, 'Password do not match!')
+        showError(input2, 'Mật khẩu không khớp!')
     }
 }
 
