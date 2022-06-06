@@ -1,0 +1,116 @@
+:root{
+    --color-blue: #2691d9;
+    --color-error: red;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background:url('/assets/img/Background.jpg') no-repeat;
+    background-size: cover;
+    /* ,linear-gradient(120deg, #3ca7ee, #9b408f); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    padding: 20px 0 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+form input{
+    display: block;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #adadad;
+    font-size: 16px;
+    outline: none;
+}
+.regis-form{
+    width: 400px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.input-form{
+    margin: 40px;
+    width: 320px;
+    position: relative;
+}
+
+.input-form span{
+    position: absolute;
+    border-bottom: 3px solid var(--color-blue);
+    top: 38px;
+    width: 0px;
+    transition: 0.5s;
+}
+
+.input-form input:focus ~span{
+    width: 320px;
+}
+
+small{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    color:var(--color-error);
+    display: none;
+}
+
+.input-form.error small{
+    display: block;
+}
+
+.input-form.error input{
+    border-bottom: 2px solid var(--color-error);
+}
+
+.input-form.success input{
+    border-bottom: 2px solid var(--color-blue);
+}
+
+.btn-login{
+    height: 50px;
+    width: 320px;
+    border-radius:25px;
+    border: none;
+    background: #2691d9;
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+}
+
+.btn-login:hover{
+    background: #08609a;
+}
+
+.regis-form p{
+    margin: 15px;
+    text-align: center;
+}
+
+.regis-form p a{
+    text-decoration: none;
+}
+
+.regis-form p a:hover{
+    text-decoration:underline;
+}
+
+
